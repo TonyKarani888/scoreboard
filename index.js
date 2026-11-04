@@ -15,14 +15,21 @@ const patwobtn = document.getElementById('ascb2');
 const pathreebtn = document.getElementById('ascb3');
 
 function updatescore(team, points) {
+
   if(team === 'home'){
+
     scorehome += points;
     homescore.textContent = scorehome;
+
   }
+
   else if(team === 'away'){
+
     scoreaway += points;
     awayscore.textContent = scoreaway;
+
   }
+
 }
 
 phonebtn.addEventListener('click', () => updatescore('home', 1));
@@ -34,10 +41,12 @@ patwobtn.addEventListener('click', () => updatescore('away', 2));
 pathreebtn.addEventListener('click', () => updatescore('away', 3));
 
 function resetscores() {
+
   scoreaway = 0;
   scorehome = 0;
   homescore.textContent = scorehome;
   awayscore.textContent = scoreaway;
+  
 }
 
 resetsc.addEventListener('click', () => resetscores());

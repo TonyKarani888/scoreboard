@@ -7,7 +7,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(168, 206, 176);
+  background-image: radial-gradient(black,hsl(240, 39%, 20%));
   overflow: hidden;
   flex-direction: column;
 }
